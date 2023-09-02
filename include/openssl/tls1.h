@@ -113,6 +113,9 @@ extern "C" {
 /* ExtensionType value from RFC7301 */
 # define TLSEXT_TYPE_application_layer_protocol_negotiation 16
 
+/* ExtensionType value from RFC6961 */
+# define TLSEXT_TYPE_status_request_v2  17
+
 /*
  * Extension type for Certificate Transparency
  * https://tools.ietf.org/html/rfc6962#section-3.3.1
@@ -131,6 +134,15 @@ extern "C" {
 /* ExtensionType value from RFC7627 */
 # define TLSEXT_TYPE_extended_master_secret      23
 
+/* [draft-ietf-tls-certificate-compression] */
+# define TLSEXT_TYPE_compress_certificate        27
+/* ExtensionType value from RFC8449 */
+# define TLSEXT_TYPE_record_size_limit           28
+
+/* Extension Type application_settings 17513 */
+// https://www.ietf.org/archive/id/draft-vvv-tls-alps-00.html
+# define TLSEXT_TYPE_application_settings     17513
+
 /* ExtensionType value from RFC4507 */
 # define TLSEXT_TYPE_session_ticket              35
 
@@ -144,6 +156,7 @@ extern "C" {
 # define TLSEXT_TYPE_post_handshake_auth         49
 # define TLSEXT_TYPE_signature_algorithms_cert   50
 # define TLSEXT_TYPE_key_share                   51
+
 
 /* Temporary extension type */
 # define TLSEXT_TYPE_renegotiate                 0xff01
